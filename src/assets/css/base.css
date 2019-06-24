@@ -1,0 +1,25 @@
+*{font-family:"微软雅黑", Tahoma;}
+html{ width: 100%; height: 100%;}
+body,html,h1,h2,h3,h4,h5,h6,p,em,i,form,ul,li,dl,dt,dd{padding:0;margin:0;
+    -webkit-text-size-adjust:none;
+    -moz-text-size-adjust:none;
+    -ms-text-size-adjust:none;
+    text-size-adjust:none;
+    color: #6c6c6c;
+}
+body{font-size:12px;width:100%; height: 100%;}
+em,i,b{font-style:normal;font-weight:normal;text-decoration:none;}
+ul,li{list-style:none;}
+h3{font-size:14px;}
+a{text-decoration:none;outline:none;cursor:pointer;color: #6c6c6c;}
+a:hover{text-decoration:none;-webkit-transition:.5s;-o-transition:.5s;-moz-transition:.5s;transition:.5s;}
+a img{border:none;display:block;}
+input[type="submit"],input[type="button"],button{cursor:pointer;padding:0;}
+input[type="text"],input[type="email"],input[type="number"],input[type="password"],textarea{padding:0 0 0 0; border: 0}
+:focus,input,select,textarea,button{outline:none;}
+textarea{resize:none;}
+.qing:after,.qing:before{display: table; content: " ";clear: both;}
+.wrap{
+  padding: 0 0.35rem 1rem 0.35rem;
+}
+.mintui-back:before,.mint-header-title{color: #fff}
