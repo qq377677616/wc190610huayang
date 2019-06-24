@@ -1,0 +1,2 @@
+<!-- <web-view src="https://taoquan.taobao.com/coupon/unify_apply.htm?sellerId=2056438400&activityId=1498da8698824dd88ca54e025e54c80d" onMessage="test"></web-view> -->
+<web-view src="{{url}}"></web-view>

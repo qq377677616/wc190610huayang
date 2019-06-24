@@ -1,0 +1,50 @@
+<view class="page">
+  <view class="wrap">
+    <view class="top1">
+      <image mode="scaleToFill" src="/assets/top1.png"/>
+    </view>
+    <view class="top2"></view>
+    <view class="item-wrap" style=" padding-top: 300rpx; padding-bottom: 76rpx;">
+    <scroll-view class="item-list" scroll-y="{{true}}" style="height: 600rpx;" onScroll="scroll" scroll-with-animation="true" scroll-animation-duration="2000ms" scroll-top="{{scrollTop}}">
+      <view class="list" >
+        <view class="li" a:for="{{list}}" a:for-item="item" data-id="{{item.playerId}}" data-status="{{item.voteStatus}}" onTap="Jump">
+          <view class="sotop">
+            <image src="{{item.headImg}}"/>
+          </view>
+          <view class="bottom">
+            <view class="font">
+              <text>暗号1:{{item.playerNum}}</text>
+              <text>选手1:{{item.name}}</text>
+            </view>
+          </view>
+        </view>
+      </view>
+      
+    </scroll-view>
+      <view class="top"><image mode="scaleToFill" src="/assets/game3_22.png"/></view>
+      <view class="bottom"><image mode="scaleToFill" src="/assets/game3_21.png"/></view>
+    </view>
+    <view class="btn">
+      <view class="btn-a" onTap="tiao"><image mode="scaleToFill" src="/assets/btn1.png"/></view>
+      <view class="btn-a">
+          <button class="clabtn" open-type="getAuthorize" 
+onGetAuthorize="onGetAuthorize" onError="onAuthError" 
+scope='phoneNumber'></button>
+        <!-- <image mode="scaleToFill" src="/assets/btn2.png"/> -->
+      </view>
+    </view>
+    <view class="btn1">
+      <image class="introduce" onTap="introduce" mode="scaleToFill" src="/assets/btn3.png"/>
+    </view>
+    <view class="tan {{on?'on':''}}">
+      <view class="tann-wrap1 w">
+        <image class="img" mode="scaleToFill" src="/assets/tan1.png"/>
+        <view class="btns" onTap="fail">
+          <image mode="scaleToFill" src="/assets/game_2.png"/>
+        </view>
+      </view>
+    </view>
+    <view class="tan2"></view>
+  </view>
+
+</view>

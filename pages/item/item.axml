@@ -1,0 +1,53 @@
+<view class="gradient">
+  <view class="top">
+    <image mode="scaleToFill" src="/assets/top4.png"/>
+  </view>
+  <view class="wrap">
+    <view class="so-img">
+      <view><image mode="scaleToFill" src="{{item.playerHeadImg}}"/></view>
+      <view class="so-img-btn">{{item.playerName}}</view>
+    </view>
+    <view class="h2">
+      当前舞力值：{{item.playerDanceIntegral}}
+    </view>
+    <view class="h3">
+      我的舞力值：{{item.userDanceIntegral}}
+    </view>
+    <view class="h3">
+      <p>为TA助力</p> <input type="text" onInput="bindKeyInput" value='{{num}}'/> <p>舞力值</p>
+    </view>
+    <view class="btn" onTap="btn">
+      
+      <image mode="scaleToFill" src="/assets/game_2.png"/>
+    </view>
+  </view>
+  <view class="btn p2">
+    <button class="btnshare" open-type="share"></button>
+    <!-- <image mode="scaleToFill" src="/assets/game_1.png"/> -->
+  </view>
+  <view class="t-fail {{fail?'on':''}}">
+    <view class="fail">
+      <view class="font">
+        {{Toast}}
+      </view>
+      <image onTap="fail" mode="scaleToFill" src="/assets/end2_1.png"/>
+      
+    </view>
+  </view>
+  <view class="t-fail {{success?'on':''}}">
+    <view class="success">
+
+
+      <image onTap="success1" mode="scaleToFill" src="/assets/sign22.png"/>  
+      <view class="name p">{{item.playerName}}</view> 
+      <view class="zhi p">{{item.voteDanceIntegral}}</view> 
+    </view>
+  </view>
+  <view class="t-fail {{share ?'on':''}}">
+  <view class="share">
+    <image onTap="share" mode="scaleToFill" src="/assets/end2_1.png"/>
+    
+  </view>
+</view>
+  <!-- <button open-type="share">Button</button> -->
+</view>

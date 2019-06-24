@@ -1,0 +1,15 @@
+{
+  "pages": [
+   
+    "pages/index/index",
+    "pages/list/list",
+     "pages/item/item",
+    "pages/todos/todos",
+    "pages/add-todo/add-todo"
+    
+  ],
+  "window": {
+    "defaultTitle": "勇闯天涯",
+    "titleBarColor": "#fff"
+  }
+}
