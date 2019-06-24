@@ -1,5 +1,0 @@
-<view class="page">
-  <view class="img">
-    <image mode="widthFix" src="/assets/introduce.jpg"/>
-  </view>
-</view>  
